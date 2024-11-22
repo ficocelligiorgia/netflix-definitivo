@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+.bg-dark {
+    background-color: #141414!important;
+}
+.navbar .navbar-brand img {
+    width: 100px;
+}
+.navbar .navbar-nav img {
+    width: 50px;
+}
+main {
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow-x: hidden;
+}
+
+.movie-row {
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+    user-select: none;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+#genre .dropdown-toggle, #genre .dropdown-menu {
+    border-radius: 0px!important;
+    
+}
+
+
+.movie-row img {
+    width: 100%;
+    position: relative;
+}
+
+.movie-row img:last-of-type~.movie-shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.516);
+    position: absolute;
+    top: 0
+}
+
+.movie-card {
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.movie-container {
+    overflow-x: scroll;
+    scrollbar-width: none; /* Nasconde la scrollbar in Firefox */
+    -ms-overflow-style: none; /* Nasconde la scrollbar in Internet Explorer e Edge */
+}
+
+.movie-container::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar in Chrome, Safari e Edge */
+}
